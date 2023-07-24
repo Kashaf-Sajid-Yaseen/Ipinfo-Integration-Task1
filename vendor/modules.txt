@@ -10,6 +10,8 @@ github.com/hashicorp/errwrap
 # github.com/hashicorp/go-multierror v1.1.1
 ## explicit; go 1.13
 github.com/hashicorp/go-multierror
+# github.com/inconshreveable/mousetrap v1.1.0
+## explicit; go 1.18
 # github.com/ipinfo/go/v2 v2.9.2
 ## explicit; go 1.15
 github.com/ipinfo/go/v2/ipinfo
@@ -46,6 +48,8 @@ github.com/pmezard/go-difflib/difflib
 # github.com/posener/script v1.1.5
 ## explicit; go 1.13
 github.com/posener/script
+# github.com/spf13/cobra v1.7.0
+## explicit; go 1.15
 # github.com/spf13/pflag v1.0.5
 ## explicit; go 1.12
 github.com/spf13/pflag

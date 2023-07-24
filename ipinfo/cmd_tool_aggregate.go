@@ -1,3 +1,5 @@
+// cmd_tool_aggregate.go
+
 package main
 
 import (

@@ -2,12 +2,10 @@ package lib
 
 import (
 	"bufio"
-	"bytes"
 	"fmt"
 	"io"
 	"net"
 	"os"
-	"sort"
 	"strings"
 
 	"github.com/spf13/pflag"
@@ -246,11 +244,6 @@ func aggregateCIDRs(cidrs []net.IPNet) []net.IPNet {
 }
 
 // Helper function to sort IP ranges by starting IP.
-func sortCIDRs(ipRanges []net.IPNet) {
-	sort.SliceStable(ipRanges, func(i, j int) bool {
-		return bytes.Compare(ipRanges[i].IP, ipRanges[j].IP) < 0
-	})
-}
 
 // Helper function to check if two CIDRs can be aggregated.
 func canAggregate(r1, r2 net.IPNet) bool {
